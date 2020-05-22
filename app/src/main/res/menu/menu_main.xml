@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pl.michaloruba.todolist.MainActivity">
+    <item
+        android:id="@+id/action_sort"
+        android:orderInCategory="100"
+        android:title="Sortowanie"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_download"
+        android:orderInCategory="100"
+        android:title="Zapisz do pliku"
+        app:showAsAction="never" />
+</menu>

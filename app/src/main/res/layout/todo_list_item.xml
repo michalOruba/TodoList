@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/todo_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/todoLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/todo_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text=""
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="6dp"/>
+
+        <TextView
+            android:id="@+id/todo_realization_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text=""
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:padding="6dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/todo_edit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/edit"
+        android:tint="@color/orange"
+        android:contentDescription="@string/edit" />
+
+    <ImageView
+        android:id="@+id/todo_attach"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/attachment"
+        android:tint="@color/green"
+        android:contentDescription="@string/attach" />
+
+    <ImageView
+        android:id="@+id/todo_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/delete"
+        android:tint="@color/red"
+        android:contentDescription="@string/delete" />
+
+</LinearLayout>
